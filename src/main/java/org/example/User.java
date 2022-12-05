@@ -21,7 +21,15 @@ public class User {
         return (imie.substring(0, 3) + nazwisko.substring(0, 3));
     }
 
-    public void uzytkownikDetails(){
-        System.out.println("Numer konta: "+numerKonta+ "\n Imię: "+imie+"\n Nazwisko: "+nazwisko+"\n Login: "+login+"\n PESEL: "+pesel+"\n Saldo: "+saldo);
+    public void uzytkownikDetails() {
+        System.out.println("Numer konta: " + numerKonta + "\n Imię: " + imie + "\n Nazwisko: " + nazwisko + "\n Login: " + login + "\n PESEL: " + pesel + "\n Saldo: " + saldo);
+    }
+
+    public double deposit(double money){
+        return saldo=saldo+money;
+    }
+
+    public double getSaldo(){
+        return saldo;
     }
 }

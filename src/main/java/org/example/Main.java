@@ -23,13 +23,12 @@ public class Main {
                 System.out.println("Informacje o koncie:");
                 uzytkownik.uzytkownikDetails();
                 break;
-//            case 2:
-//                int saldo;
-//                System.out.println("Wprowadź kwotę, jaką chcesz wpłacić.");
-//                int kwota1 = scanner.nextInt();
-//                System.out.println("Kwota wpłaty: " + kwota1);
-//                System.out.println("Aktualny stan konta: " + (saldo += kwota1));
-//                break;
+            case 2:
+                System.out.println("Wprowadź kwotę, jaką chcesz wpłacić.");
+                double moneyToDeposit = scanner.nextDouble();
+                uzytkownik.deposit(moneyToDeposit);
+                System.out.println("Aktualny stan konta: " +uzytkownik.getSaldo());
+                break;
 //            case 3:
 //                System.out.println("Wprowadź kwotę, jaką chcesz wypłacić.");
 //                int kwota2 = scanner.nextInt();

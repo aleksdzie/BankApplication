@@ -32,4 +32,14 @@ public class User {
     public double getSaldo(){
         return saldo;
     }
+
+    public double withdraw(double money){
+        if (money > saldo){
+            System.out.println("Przekroczono limit konta!");
+        }
+        else{
+            saldo=saldo-money;
+        }
+        return saldo;
+    }
 }
